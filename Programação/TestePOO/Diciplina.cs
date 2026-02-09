@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TestePOO
+{
+    public class Diciplina
+    {
+        public string Nome { get; set; } 
+        public Professor professor { get; set;  }
+       
+        
+    }
+}

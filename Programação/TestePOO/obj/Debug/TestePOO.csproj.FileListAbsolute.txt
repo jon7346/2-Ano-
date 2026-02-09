@@ -1,0 +1,10 @@
+C:\Users\jonat\source\repos\TestePOO\bin\Debug\TestePOO.exe.config
+C:\Users\jonat\source\repos\TestePOO\bin\Debug\TestePOO.exe
+C:\Users\jonat\source\repos\TestePOO\bin\Debug\TestePOO.pdb
+C:\Users\jonat\source\repos\TestePOO\obj\Debug\TestePOO.csproj.AssemblyReference.cache
+C:\Users\jonat\source\repos\TestePOO\obj\Debug\TestePOO.Form1.resources
+C:\Users\jonat\source\repos\TestePOO\obj\Debug\TestePOO.Properties.Resources.resources
+C:\Users\jonat\source\repos\TestePOO\obj\Debug\TestePOO.csproj.GenerateResource.cache
+C:\Users\jonat\source\repos\TestePOO\obj\Debug\TestePOO.csproj.CoreCompileInputs.cache
+C:\Users\jonat\source\repos\TestePOO\obj\Debug\TestePOO.exe
+C:\Users\jonat\source\repos\TestePOO\obj\Debug\TestePOO.pdb

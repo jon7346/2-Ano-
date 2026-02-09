@@ -1,0 +1,10 @@
+C:\Users\jonat\source\repos\ProjetoMVC\bin\Debug\ProjetoMVC.exe.config
+C:\Users\jonat\source\repos\ProjetoMVC\bin\Debug\ProjetoMVC.exe
+C:\Users\jonat\source\repos\ProjetoMVC\bin\Debug\ProjetoMVC.pdb
+C:\Users\jonat\source\repos\ProjetoMVC\obj\Debug\ProjetoMVC.csproj.AssemblyReference.cache
+C:\Users\jonat\source\repos\ProjetoMVC\obj\Debug\ProjetoMVC.Form1.resources
+C:\Users\jonat\source\repos\ProjetoMVC\obj\Debug\ProjetoMVC.Properties.Resources.resources
+C:\Users\jonat\source\repos\ProjetoMVC\obj\Debug\ProjetoMVC.csproj.GenerateResource.cache
+C:\Users\jonat\source\repos\ProjetoMVC\obj\Debug\ProjetoMVC.csproj.CoreCompileInputs.cache
+C:\Users\jonat\source\repos\ProjetoMVC\obj\Debug\ProjetoMVC.exe
+C:\Users\jonat\source\repos\ProjetoMVC\obj\Debug\ProjetoMVC.pdb

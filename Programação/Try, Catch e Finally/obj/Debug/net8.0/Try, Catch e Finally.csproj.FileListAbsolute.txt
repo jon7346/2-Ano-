@@ -1,0 +1,14 @@
+C:\Users\jonat\source\repos\Try, Catch e Finally\bin\Debug\net8.0\Try, Catch e Finally.exe
+C:\Users\jonat\source\repos\Try, Catch e Finally\bin\Debug\net8.0\Try, Catch e Finally.deps.json
+C:\Users\jonat\source\repos\Try, Catch e Finally\bin\Debug\net8.0\Try, Catch e Finally.runtimeconfig.json
+C:\Users\jonat\source\repos\Try, Catch e Finally\bin\Debug\net8.0\Try, Catch e Finally.dll
+C:\Users\jonat\source\repos\Try, Catch e Finally\bin\Debug\net8.0\Try, Catch e Finally.pdb
+C:\Users\jonat\source\repos\Try, Catch e Finally\obj\Debug\net8.0\Try, Catch e Finally.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonat\source\repos\Try, Catch e Finally\obj\Debug\net8.0\Try, Catch e Finally.AssemblyInfoInputs.cache
+C:\Users\jonat\source\repos\Try, Catch e Finally\obj\Debug\net8.0\Try, Catch e Finally.AssemblyInfo.cs
+C:\Users\jonat\source\repos\Try, Catch e Finally\obj\Debug\net8.0\Try, Catch e Finally.csproj.CoreCompileInputs.cache
+C:\Users\jonat\source\repos\Try, Catch e Finally\obj\Debug\net8.0\Try, Catch e Finally.dll
+C:\Users\jonat\source\repos\Try, Catch e Finally\obj\Debug\net8.0\refint\Try, Catch e Finally.dll
+C:\Users\jonat\source\repos\Try, Catch e Finally\obj\Debug\net8.0\Try, Catch e Finally.pdb
+C:\Users\jonat\source\repos\Try, Catch e Finally\obj\Debug\net8.0\Try, Catch e Finally.genruntimeconfig.cache
+C:\Users\jonat\source\repos\Try, Catch e Finally\obj\Debug\net8.0\ref\Try, Catch e Finally.dll

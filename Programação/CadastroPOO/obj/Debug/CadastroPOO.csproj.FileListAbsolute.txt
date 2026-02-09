@@ -1,0 +1,10 @@
+C:\Users\jonat\source\repos\CadastroPOO\bin\Debug\CadastroPOO.exe.config
+C:\Users\jonat\source\repos\CadastroPOO\bin\Debug\CadastroPOO.exe
+C:\Users\jonat\source\repos\CadastroPOO\bin\Debug\CadastroPOO.pdb
+C:\Users\jonat\source\repos\CadastroPOO\obj\Debug\CadastroPOO.csproj.AssemblyReference.cache
+C:\Users\jonat\source\repos\CadastroPOO\obj\Debug\CadastroPOO.ale.resources
+C:\Users\jonat\source\repos\CadastroPOO\obj\Debug\CadastroPOO.Properties.Resources.resources
+C:\Users\jonat\source\repos\CadastroPOO\obj\Debug\CadastroPOO.csproj.GenerateResource.cache
+C:\Users\jonat\source\repos\CadastroPOO\obj\Debug\CadastroPOO.csproj.CoreCompileInputs.cache
+C:\Users\jonat\source\repos\CadastroPOO\obj\Debug\CadastroPOO.exe
+C:\Users\jonat\source\repos\CadastroPOO\obj\Debug\CadastroPOO.pdb

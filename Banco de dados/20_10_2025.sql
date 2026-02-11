@@ -1,0 +1,46 @@
+CREATE DATABASE RH;
+
+
+CREATE TABLE Funcionarios (
+    FuncionarioID           INT IDENTITY(1,1) PRIMARY KEY,
+    Nome                    VARCHAR(120)     NOT NULL,
+    CPF                     VARCHAR(14)      NULL,   -- para teste didático, sem validação de dígito
+    Data_Nascimento         DATE             NULL,
+    Data_Admissao           DATE             NOT NULL,
+    Cargo                   NVARCHAR(80)     NULL,
+    Area_Atuacao            VARCHAR(20)      NOT NULL, -- Administrativo, Operacional, Financeiro
+    Tipo_Contratacao        VARCHAR(20)      NOT NULL, -- CLT, PJ, Estágio
+    Carga_Horaria_Semanal   INT              NULL,
+    Salario_Base            DECIMAL(12,2)    NOT NULL,
+    Email                   NVARCHAR(120)    NULL,
+    Telefone                NVARCHAR(30)     NULL,
+    Endereco                NVARCHAR(200)    NULL,
+    Cidade                  NVARCHAR(80)     NULL,
+    Estado                  CHAR(2)          NULL,
+    CEP                     VARCHAR(9)       NULL,
+    Status                  VARCHAR(10)      NOT NULL, --'Ativo','Inativo'
+    Data_Demissao           DATE             NULL,
+    SupervisorID            INT              NULL,
+    Sexo                    CHAR(1)          NULL,
+    Estado_Civil            NVARCHAR(30)     NULL,
+    Escolaridade            NVARCHAR(40)     NULL,
+    PIS                     VARCHAR(20)      NULL,
+    CTPS                    VARCHAR(20)      NULL,
+    Banco                   NVARCHAR(50)     NULL,
+    Agencia                 VARCHAR(10)      NULL,
+    Conta                   VARCHAR(20)      NULL,
+    Chave_PIX               NVARCHAR(60)     NULL,
+    Observacoes             NVARCHAR(MAX)    NULL,
+    Data_Ultimo_Reajuste    DATE             NULL,
+    CONSTRAINT CK_RH_Func_Area CHECK (Area_Atuacao IN ('Administrativo','Operacional','Financeiro')),
+);
+
+INSERT INTO Funcionarios (
+    Nome, CPF, Data_Nascimento, Data_Admissao, Cargo, Area_Atuacao, Tipo_Contratacao,
+    Carga_Horaria_Semanal, Salario_Base, Email, Telefone, Endereco, Cidade, Estado,
+    CEP, Status, Sexo, Estado_Civil, Escolaridade
+)
+
+
+
+VALUES ('Larissa', '602.111.458-1', '1973-10-09', '2021-08-01', 'Analista', 'Operacional', 'CLT', 40, 4951.13, 'larissa@empresa.com.br', '(11) 9422-99173', 'Rua 1, 856', 'São Paulo', 'SP', '21981-670', 'Ativo', 'F', 'Casado(a)', 'Superior'), ('Sophia', '632.753.811-1', '1976-12-07', '2017-06-03', 'Analista', 'Administrativo', 'CLT', 40, 6503.79, 'sophia@empresa.com.br', '(12) 9831-27464', 'Rua 2, 707', 'Rio de Janeiro', 'RJ', '52345-231', 'Ativo', 'F', 'Solteiro(a)', 'Médio'), ('Vitor', '620.570.803-3', '1974-04-18', '2017-01-20', 'Desenvolvedor', 'Operacional', 'CLT', 36, 7028.9, 'vitor@empresa.com.br', '(13) 9845-66779', 'Rua 3, 334', 'Belo Horizonte', 'MG', '90876-432', 'Ativo', 'M', 'Casado(a)', 'Superior'), ('Isabella', '523.498.802-1', '1975-01-25', '2017-06-25', 'Designer', 'Administrativo', 'CLT', 36, 7301.62, 'isabella@empresa.com.br', '(14) 9367-33921', 'Rua 4, 301', 'Salvador', 'BA', '12345-567', 'Ativo', 'F', 'Solteiro(a)', 'Superior'), ('Breno', '499.710.150-1', '1980-04-13', '2017-04-03', 'Desenvolvedor', 'Operacional', 'CLT', 30, 8121.21, 'breno@empresa.com.br', '(15) 9478-22871', 'Rua 5, 876', 'Brasília', 'DF', '34567-789', 'Ativo', 'M', 'Casado(a)', 'Pós-graduação'), ('Manuela', '337.818.009-4', '1980-04-03', '2018-09-17', 'Analista', 'Administrativo', 'CLT', 30, 8388.58, 'manuela@empresa.com.br', '(16) 9589-99121', 'Rua 6, 543', 'Curitiba', 'PR', '45678-890', 'Ativo', 'F', 'Solteiro(a)', 'Médio'), ('Gustavo', '299.888.828-5', '1980-11-20', '2018-07-28', 'Gerente', 'Administrativo', 'CLT', 40, 9353.46, 'gustavo@empresa.com.br', '(17) 9701-44331', 'Rua 7, 765', 'Porto Alegre', 'RS', '56789-901', 'Ativo', 'M', 'Casado(a)', 'Pós-graduação'), ('Livia', '222.133.456-1', '1982-07-27', '2019-10-18', 'Assistente', 'Administrativo', 'CLT', 44, 2896.7, 'livia@empresa.com.br', '(18) 9812-33441', 'Rua 8, 234', 'Fortaleza', 'CE', '67890-012', 'Ativo', 'F', 'Solteiro(a)', 'Médio'), ('Enzo', '123.456.789-0', '1983-03-15', '2019-03-12', 'Assistente', 'Financeiro', 'CLT', 44, 3101.99, 'enzo@empresa.com.br', '(19) 9923-55661', 'Rua 9, 678', 'Recife', 'PE', '78901-123', 'Ativo', 'M', 'Divorciado(a)', 'Superior'), ('Heloisa', '987.654.321-0', '1984-09-02', '2020-05-30', 'Especialista', 'Administrativo', 'CLT', 40, 10515.2, 'heloisa@empresa.com.br', '(20) 9134-77881', 'Rua 10, 987', 'Manaus', 'AM', '89012-234', 'Ativo', 'F', 'Casado(a)', 'Pós-graduação'), ('Davi', '456.789.123-0', '1985-06-20', '2020-02-14', 'Especialista', 'Administrativo', 'PJ', 40, 11025.75, 'davi@empresa.com.br', '(21) 9245-99001', 'Rua 11, 456', 'Goiânia', 'GO', '90123-345', 'Ativo', 'M', 'Solteiro(a)', 'Pós-graduação'), ('Julia', '789.123.456-0', '1986-11-12', '2021-11-05', 'Analista', 'Financeiro', 'PJ', 30, 5120.3, 'julia@empresa.com.br', '(22) 9356-11221', 'Rua 12, 123', 'Belém', 'PA', '12345-678', 'Ativo', 'F', 'Casado(a)', 'Superior'), ('Thiago', '321.654.987-0', '1987-01-30', '2022-07-22', 'Desenvolvedor', 'Operacional', 'PJ', 40, 8500.0, 'thiago@empresa.com.br', '(23) 9467-33441', 'Rua 13, 789', 'São Luís', 'MA', '23456-789', 'Ativo', 'M', 'Solteiro(a)', 'Superior'), ('Alice', '654.987.321-0', '1988-08-18', '2022-01-10', 'Assistente', 'Administrativo', 'CLT', 44, 3200.5, 'alice@empresa.com.br', '(24) 9578-55661', 'Rua 14, 321', 'Maceió', 'AL', '34567-890', 'Ativo', 'F', 'Divorciado(a)', 'Médio'), ('Miguel', '987.321.654-0', '1989-05-05', '2023-09-01', 'Estagiário', 'Administrativo', 'Estágio', 30, 1500.0, 'miguel@empresa.com.br', '(25) 9689-77881', 'Rua 15, 654', 'Campo Grande', 'MS', '45678-901', 'Ativo', 'M', 'Solteiro(a)', 'Superior Incompleto'), ('Laura', '123.987.456-0', '1990-12-25', '2023-04-18', 'Estagiário', 'Administrativo', 'Estágio', 30, 1500.0, 'laura@empresa.com.br', '(26) 9790-99001', 'Rua 16, 987', 'João Pessoa', 'PB', '56789-012', 'Ativo', 'F', 'Solteiro(a)', 'Superior Incompleto'), ('Arthur', '456.123.789-0', '1991-07-14', '2024-03-25', 'Técnico', 'Operacional', 'CLT', 40, 4200.0, 'arthur@empresa.com.br', '(27) 9801-11221', 'Rua 17, 765', 'Teresina', 'PI', '67890-123', 'Ativo', 'M', 'Casado(a)', 'Técnico'), ('Beatriz', '789.456.123-0', '1992-02-02', '2024-01-07', 'Técnico', 'Financeiro', 'CLT', 40, 4350.25, 'beatriz@empresa.com.br', '(28) 9912-33441', 'Rua 18, 432', 'Natal', 'RN', '78901-234', 'Ativo', 'F', 'Solteiro(a)', 'Técnico'), ('Lucas', '321.789.654-0', '1993-10-31', '2017-08-11', 'Gerente', 'Administrativo', 'CLT', 40, 12050.8, 'lucas@empresa.com.br', '(29) 9123-55661', 'Rua 19, 876', 'Cuiabá', 'MT', '89012-345', 'Ativo', 'M', 'Casado(a)', 'Pós-graduação'), ('Maria', '654.321.987-0', '1994-04-22', '2018-02-19', 'Coordenador', 'Administrativo', 'CLT', 40, 9800.0, 'maria@empresa.com.br', '(30) 9234-77881', 'Rua 20, 543', 'Florianópolis', 'SC', '90123-456', 'Ativo', 'F', 'Solteiro(a)', 'Superior'), ('Pedro', '987.654.123-0', '1995-11-08', '2019-06-05', 'Coordenador', 'Operacional', 'CLT', 40, 10200.0, 'pedro@empresa.com.br', '(31) 9345-99001', 'Rua 21, 210', 'Vitória', 'ES', '12345-789', 'Ativo', 'M', 'Casado(a)', 'Superior'), ('Ana', '123.456.987-0', '1996-03-29', '2020-12-12', 'Analista', 'Administrativo', 'CLT', 40, 5100.75, 'ana@empresa.com.br', '(32) 9456-11221', 'Rua 22, 123', 'Aracaju', 'SE', '23456-890', 'Ativo', 'F', 'Divorciado(a)', 'Superior'), ('Bernardo', '456.789.321-0', '1997-09-15', '2021-03-30', 'Desenvolvedor', 'Operacional', 'CLT', 40, 7800.0, 'bernardo@empresa.com.br', '(33) 9567-33441', 'Rua 23, 456', 'Palmas', 'TO', '34567-901', 'Ativo', 'M', 'Solteiro(a)', 'Superior'), ('Clara', '789.123.654-0', '1998-07-03', '2022-10-18', 'Designer', 'Administrativo', 'PJ', 30, 6900.0, 'clara@empresa.com.br', '(34) 9678-55661', 'Rua 24, 789', 'Porto Velho', 'RO', '45678-012', 'Ativo', 'F', 'Solteiro(a)', 'Superior'), ('Daniel', '321.654.789-0', '1999-01-20', '2023-05-08', 'Estagiário', 'Financeiro', 'Estágio', 30, 1500.0, 'daniel@empresa.com.br', '(35) 9789-77881', 'Rua 25, 987', 'Rio Branco', 'AC', '56789-123', 'Ativo', 'M', 'Solteiro(a)', 'Superior Incompleto'), ('Elena', '654.987.123-0', '2000-08-08', '2024-02-15', 'Estagiário', 'Operacional', 'Estágio', 30, 1500.0, 'elena@empresa.com.br', '(36) 9890-99001', 'Rua 26, 654', 'Boa Vista', 'RR', '67890-234', 'Ativo', 'F', 'Solteiro(a)', 'Superior Incompleto'), ('Felipe', '987.321.456-0', '2001-05-27', '2017-11-28', 'Assistente', 'Administrativo', 'CLT', 44, 3000.0, 'felipe@empresa.com.br', '(37) 9901-11221', 'Rua 27, 321', 'Macapá', 'AP', '78901-345', 'Ativo', 'M', 'Casado(a)', 'Médio'), ('Gabriela', '123.789.456-0', '2002-12-15', '2018-05-14', 'Analista', 'Administrativo', 'CLT', 40, 5500.0, 'gabriela@empresa.com.br', '(38) 9112-33441', 'Rua 28, 876', 'São Paulo', 'SP', '89012-456', 'Ativo', 'F', 'Solteiro(a)', 'Superior'), ('Heitor', '456.987.123-0', '2003-02-02', '2019-09-01', 'Desenvolvedor', 'Operacional', 'CLT', 40, 7200.0, 'heitor@empresa.com.br', '(39) 9223-55661', 'Rua 29, 543', 'Rio de Janeiro', 'RJ', '90123-567', 'Ativo', 'M', 'Solteiro(a)', 'Superior'), ('Isadora', '789.321.654-0', '1978-06-19', '2020-01-20', 'Gerente', 'Administrativo', 'CLT', 40, 11500.0, 'isadora@empresa.com.br', '(40) 9334-77881', 'Rua 30, 210', 'Belo Horizonte', 'MG', '12345-890', 'Ativo', 'F', 'Divorciado(a)', 'Pós-graduação');
